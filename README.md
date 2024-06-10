@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+In this assignment, we created a simple ReactJS frontend application that demonstrates the use of conditional rendering using useState, use of fragments, react-portals and animations using CSSTransition using CSSTransition from the react-transition-group on the paragraph tag.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Steps to Build the Application:
 
-## Available Scripts
+Step 1: Setting Up the Project
 
-In the project directory, you can run:
+Create a New React App: npx create-react-app my-assignment-4
 
-### `npm start`
+cd my-assignment-4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Step 2: Install react-transition-group
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install react-transition-group
 
-### `npm test`
+![alt text](<Screenshot from 2024-06-10 11-12-41.png>)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Step 3: Tasks which are asked
 
-### `npm run build`
+1. Conditional rendering of content using "useState"
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here, we have created useState named showMessage initially it's value it set to false.
+When we click on button we are changing it's value from false to true.
+using this condition we are changing the color or button and also showing the paragraph.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![alt text](<Screenshot from 2024-06-10 11-20-30.png>)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. React Fragment
 
-### `npm run eject`
+React fragment is used to combine the child nodes and render without creating an extra parent Node.
+We have created h1 tag and p tag without any parent tag.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![alt text](image.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. React Portals using DOM
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React portal is used to flexibly render the children of a React component in another location in the DOM.
+We have rendered the component in the App file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![alt text](<Screenshot from 2024-06-10 11-25-11.png>)
 
-## Learn More
+here is the PortalComponent:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![alt text](<Screenshot from 2024-06-10 11-26-13.png>)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Animation using CSSTransition
 
-### Code Splitting
+React Transition Group is a collection of components that work together to enable smooth transitions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+We have created animation on the click of button using inProp useState.
+When we are clicking on Click to show button the animation is starting.
 
-### Analyzing the Bundle Size
+![alt text](<Screenshot from 2024-06-10 11-29-27.png>)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Step 4: Integrating these component in the App.js file.
 
-### Making a Progressive Web App
+After completing all tasks in a component we have put it in the App.js and showed in grid formate for better UI.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](<Screenshot from 2024-06-10 11-31-11.png>)

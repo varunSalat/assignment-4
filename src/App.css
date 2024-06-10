@@ -35,3 +35,8 @@
 .co_text {
   color: rgb(58, 58, 58);
 }
+
+/* portal-text */
+.portal-text {
+  font-size: 2rem;
+}
